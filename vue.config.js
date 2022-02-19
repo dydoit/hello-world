@@ -9,7 +9,7 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       [process.env.VUE_APP_BASE_API]: {
-        target: '',
+        target: 'http://10.242.31.38:10280/uniflowApi/',
         changeOrigin: true,
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''
